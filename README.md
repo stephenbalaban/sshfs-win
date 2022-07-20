@@ -144,7 +144,7 @@ sshfs-win itself does not currently support ssh tunneling, but something similar
 
 - use openSSH t create a local port forward through the jump host to the target
   ```
-  ssh -L <origin port of jump connection>:<target of tunnel>:<port of target to target> <adress of tunnel jump host>
+  ssh -L <origin port of jump connection>:<target of tunnel>:<port of target to target> <address of tunnel jump host>
   ```
   All standard settings of the ssh config may be used in this step.
 
@@ -153,7 +153,7 @@ sshfs-win itself does not currently support ssh tunneling, but something similar
   create the file C:\Users\<UserName>\.ssh\config and/or add the following lines:
 
   Host <jump host alias>
-    Hostname <adress of jump host>
+    Hostname <address of jump host>
     User <user name at jump host>
     IdentityFile <path to private key for login to the jump host, may have a pass phrase>
     IdentitesOnly yes
